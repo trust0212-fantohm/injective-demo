@@ -19,10 +19,10 @@ async function main() {
       feeRecipient: user,
       injectiveAddress: user,
       margin: derivativeMarginFromChainMargin({
-        value: 40,
+        value: 0.8,
         quoteDecimals: 0
       }),
-      price: "40",
+      price: "0.2",
       quantity: 1,
       subaccountId: getSubaccountId(user),
       orderType: OrderTypeMap.BUY,

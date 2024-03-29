@@ -19,13 +19,13 @@ async function main() {
       feeRecipient: user,
       injectiveAddress: user,
       margin: derivativeMarginFromChainMargin({
-        value: 40,
+        value: 1000000,
         quoteDecimals: 0
       }),
-      price: "40",
+      price: "0.2",
       quantity: 1,
       subaccountId: getSubaccountId(user),
-      orderType: OrderTypeMap.BUY,
+      orderType: OrderTypeMap.SELL,
     });
 
     const txHash = await new MsgBroadcasterWithPk({
